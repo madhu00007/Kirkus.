@@ -1,0 +1,443 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "EB Garamond", serif;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+section > *,
+nav {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header hr {
+  color: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+.kirkus-logo-text {
+  font-size: 22px;
+  color: #666;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.news-section {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 50px;
+}
+
+.news-section img {
+  max-width: 100%;
+}
+
+.whitetiger-section-desktop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.whitetiger-section-desktop img {
+  width: 100%;
+}
+
+.whitetiger-section-desktop h1 {
+  text-align: left;
+  font-size: 56px;
+  margin-bottom: 48px;
+  line-height: 1.25;
+}
+
+.whitetiger-section-desktop p {
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 48px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #666;
+}
+
+a:hover {
+  color: black;
+}
+
+header {
+  background: white;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 1px 1px 10px #ccc;
+}
+
+.clear {
+  height: 112px;
+}
+
+header nav {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%;
+  /*   border-bottom: 1px solid #ddd; */
+}
+
+header img {
+  height: 55px;
+}
+
+.btn {
+  color: white;
+  background: #1a73e8;
+  padding: 5px 24px;
+  line-height: 25px;
+  border-radius: 4px;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  color: white;
+  background: #174ea6;
+}
+
+footer {
+  padding: 32px 16px;
+  background-color: #f8f8f8;
+}
+
+footer img {
+  height: 25px;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+}
+
+footer nav {
+  margin: 32px 0;
+}
+
+footer li {
+  margin-right: 16px;
+}
+
+footer select {
+  margin-left: 16px;
+  border: none;
+  background-color: #f8f8f8;
+  padding: 8px;
+  width: 160px;
+}
+
+.follow-icon {
+  background: black;
+
+  border-radius: 7px;
+  margin-right: 8px;
+}
+
+/* sections */
+
+section {
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  margin: 15px 0;
+  letter-spacing: 0.75px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+p {
+  margin: 13px;
+  text-align: center;
+}
+
+.walter-section,
+.gotham-section,
+.Edgar-section {
+  background: #f8f8f8;
+}
+
+.column {
+  float: left;
+  width: 48.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.walter-section img {
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.gotham-section img {
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .mobile-only {
+    display: none !important;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
+  .kirkus-logo-text {
+    font-size: 35px;
+  }
+
+  .whitetiger-section-desktop {
+    display: grid;
+  }
+
+  .news-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+header nav {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%;
+  border-bottom: 1px solid #ddd;
+}
+
+header img {
+  height: 55px;
+}
+
+.btn {
+  color: white;
+  background: #1a73e8;
+  padding: 5px 24px;
+  line-height: 25px;
+  border-radius: 4px;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  color: white;
+  background: #174ea6;
+}
+
+.kirkus-logo-text {
+  font-size: 35px;
+  color: #666;
+}
+
+footer {
+  padding: 32px 16px;
+  background-color: #f8f8f8;
+}
+
+footer img {
+  height: 25px;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+footer nav {
+  margin: 32px 0;
+}
+
+footer li {
+  margin-right: 16px;
+}
+
+footer select {
+  margin-left: 16px;
+  border: none;
+  background-color: #f8f8f8;
+  padding: 8px;
+  width: 160px;
+}
+
+.follow-icon {
+  background: black;
+
+  border-radius: 7px;
+  margin-right: 8px;
+}
+
+/* sections */
+
+section {
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  margin: 15px 0;
+  letter-spacing: 0.75px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+p {
+  margin: 13px;
+  text-align: center;
+}
+
+.walter-section,
+.gotham-section,
+.Edgar-section {
+  background: #f8f8f8;
+}
+
+.whitetiger-section img,
+.gotham-section img,
+.election-section img,
+.Edgar-section img {
+  max-height: 400px;
+  max-width: 100%;
+}
+
+.Edgar-section > * + * {
+  margin: 28px 0;
+}
+
+.column {
+  float: left;
+  width: 48.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.walter-section img {
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.gotham-section img {
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.carousel-wrapper {
+  position: relative;
+}
+
+.carousel {
+  overflow-y: hidden;
+  width: 300px;
+  height: 450px;
+}
+
+.carousel .carousel_item,
+.carousel .carousel_item--hidden {
+  display: none;
+}
+
+.carousel .carousel_item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel .carousel_item--visible {
+  display: block;
+}
+
+.carousel-wrapper .carousel_actions {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+}
+
+@media (min-width: 480px) {
+  .carousel-wrapper .carousel_actions {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: -75px;
+  }
+}
+
+.carousel_actions button {
+  border-radius: 999px;
+  font-weight: bold;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.carousel .carousel_actions button#carousel_button--prev {
+  margin-left: 10px;
+}
+
+.carousel .carousel_actions button#carousel_button--next {
+  margin-right: 10px;
+}
